@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    setInterval(getCurrentTime, 1000);
+});
+
 function startMenu() {
   var element = document.getElementById('startMenu');
   if (element.style.display == "none"){
@@ -10,4 +14,3 @@ function startMenu() {
   var now = new Date();
   var time = now.getHours() + ":" + now.getMinutes().toString().padStart(2, 0);
   document.getElementById('clock').innerHTML = time;
-}
