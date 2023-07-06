@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-    setInterval(getCurrentTime, 1000);
-});
-
 function startMenu() {
   var element = document.getElementById('startMenu');
   if (element.style.display == "none"){
